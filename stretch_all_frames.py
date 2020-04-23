@@ -11,7 +11,7 @@ def stretch_all_frames():
         current_frame_number += 1
         with Image.open(frame) as _frame:
             IMG_ARRAY = create_np_array(_frame)
-            NEW_IMG = build_new_image(index_list, IMG_ARRAY)
+            NEW_IMG = build_new_image(index_list, IMG_ARRAY, 500)
             save_file(NEW_IMG, frame)
             print(f'{current_frame_number}/{number_of_frames}', frame, 'stretched')
 

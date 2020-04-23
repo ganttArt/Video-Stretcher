@@ -18,9 +18,9 @@ from shutil import rmtree
 VIDEO_FILE = 'Beach-@enginakyurt.mp4'
 
 if __name__ == "__main__":
-    split_video(VIDEO_FILE)
+    FPS = split_video(VIDEO_FILE)
     stretch_all_frames()
-    create_video(VIDEO_FILE)
+    create_video(VIDEO_FILE, FPS)
     rmtree('video-frames')
     print('video-frames directory deleted')
     print('Video stretching complete')

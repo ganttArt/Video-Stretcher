@@ -1,12 +1,11 @@
 import cv2
 import os
 
-def create_video(video_filename):
+def create_video(video_filename, fps):
     image_folder = 'video-frames'
     output_name = 'Stretched_' + video_filename.split('.')[0] + '.mp4'
-    fps = 30
 
-    images = [img for img in os.listdir(image_folder)]
+    images = sorted([img for img in os.listdir(image_folder)])
     frame = cv2.imread(os.path.join(image_folder, images[0]))
     height, width, layers = frame.shape
 
@@ -23,4 +22,4 @@ def create_video(video_filename):
 
 
 if __name__ == "__main__":
-    create_video('Beach-@enginakyurt.mp4')
+    create_video('Beach-@enginakyurt.mp4', 30)
