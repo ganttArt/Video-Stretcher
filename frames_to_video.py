@@ -2,6 +2,7 @@ import cv2
 import os
 
 def create_video(video_filename, fps):
+    print(fps)
     image_folder = 'video-frames'
     output_name = 'Stretched_' + video_filename.split('.')[0] + '.mp4'
 
@@ -19,7 +20,8 @@ def create_video(video_filename, fps):
 
     cv2.destroyAllWindows()
     video.release()
+    print(f'{output_name} built')
 
 
 if __name__ == "__main__":
-    create_video('Beach-@enginakyurt.mp4', 30)
+    create_video('Waves-Javier Lemus.mp4', 27)

@@ -11,15 +11,16 @@ Run
 python3 main.py
 '''
 from split_video_by_frame import split_video
-from stretch_all_frames import stretch_all_frames
+from stretch_all_frames import stretch_all_frames, upward_stretch_all_frames
 from frames_to_video import create_video
 from shutil import rmtree
+from time import sleep
 
-VIDEO_FILE = 'Beach-@enginakyurt.mp4'
+VIDEO_FILE = 'Short-Waves.mp4'
 
 if __name__ == "__main__":
     FPS = split_video(VIDEO_FILE)
-    stretch_all_frames()
+    upward_stretch_all_frames(170)
     create_video(VIDEO_FILE, FPS)
     rmtree('video-frames')
     print('video-frames directory deleted')

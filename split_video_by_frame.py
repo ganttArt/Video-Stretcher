@@ -17,7 +17,7 @@ import os
 def split_video(filename):
     # Playing video from file:
     cap = cv2.VideoCapture(filename)
-    print(cap.get(cv2.CAP_PROP_FPS))
+    frame_rate = int(cap.get(cv2.CAP_PROP_FPS))
 
     try:
         if not os.path.exists('video-frames'):
@@ -52,7 +52,7 @@ def split_video(filename):
     cap.release()
     cv2.destroyAllWindows()
 
-    return cap.get(cv2.CAP_PROP_FPS)
+    return frame_rate
 
 if __name__ == "__main__":
     split_video('Beach-@enginakyurt.mp4')
