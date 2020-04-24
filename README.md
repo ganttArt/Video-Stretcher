@@ -1,16 +1,17 @@
-#Video Stretcher<br/><br/>
+# Video Stretcher<br/><br/>
 
-##Video Examples:
+## Video Examples:
 Waves Upward
 [](https://youtu.be/MBnkY0TiPQA)
+<br/>
 ![](/Assets/WavesUp_Thumbnail.png)
 <br/>
-
+<br/>
 Waves Down
 [](https://youtu.be/xN9zTDmrAP0)
 ![](/Assets/WavesDown_Thumbnail.png)
 <br/>
-
-##Effect
+<br/>
+## Effect
 ![](/Assets/2019-11-17 Waterfall Stretch.jpg)
 See also: [Image Stretcher on GitHub](https://github.com/ganttArt/image_stretcher)
