@@ -1,8 +1,8 @@
-# Video Stretcher<br/><br/>
+# Video Stretcher<br/>
 
 ## Video Examples:
 Waves Upward
-[](https://youtu.be/MBnkY0TiPQA)
+[https://youtu.be/MBnkY0TiPQA](https://youtu.be/MBnkY0TiPQA)
 <br/>
 ![](/Assets/WavesUp_Thumbnail.png)
 <br/>
@@ -13,5 +13,5 @@ Waves Down
 <br/>
 <br/>
 ## Effect
-![](/Assets/2019-11-17 Waterfall Stretch.jpg)
+![](/Assets/2019-11-17 Waterfall Stretch.jpg)<br/>
 See also: [Image Stretcher on GitHub](https://github.com/ganttArt/image_stretcher)
