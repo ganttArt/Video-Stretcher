@@ -2,12 +2,11 @@ from pathlib import Path
 from PIL import Image
 from stretching_functions import create_np_array, create_index_list, create_gradient, build_new_image, save_file
 
-def stretch_all_frames():
+def stretch_all_frames(starting_pixel):
     index_list = create_index_list()
     directory = Path('video-frames').iterdir()
     number_of_frames = len(list(directory))
     current_frame_number = 0
-    starting_pixel = 500
 
     for frame in Path('video-frames').iterdir():
         current_frame_number += 1
