@@ -4,6 +4,8 @@
 ### Waves Upward
 [https://youtu.be/MBnkY0TiPQA](https://youtu.be/MBnkY0TiPQA)
 <br/>
+[![](/Assets/WavesUp_Thumbnail.png)](https://youtu.be/MBnkY0TiPQA)
+
 ![](/Assets/WavesUp_Thumbnail.png)
 <br/>
 <br/>
