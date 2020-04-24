@@ -1,4 +1,8 @@
 # Video Stretcher
+<br/>
+To install dependencies: pip3 install -r requirements.txt
+To run: python3 main.py
+<br/>
 
 ## Video Examples:
 ### Waves Upward
