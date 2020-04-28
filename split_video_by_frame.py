@@ -32,7 +32,7 @@ def split_video(filename):
         ret, frame = cap.read()
 
         # Saves image of the current frame in jpg file
-        name = './video-frames/frame' + str(currentFrame).zfill(6) + '.jpg'
+        name = './video-frames/frame' + str(currentFrame).zfill(6) + '.png'
         print ('Creating...' + name)
         
         #Code used for video where getting duplicate frames
