@@ -37,6 +37,21 @@ def upward_stretch_all_frames(starting_pixel):
             save_file(NEW_IMG, frame)
             print(f'{current_frame_number}/{number_of_frames}', frame, 'stretched')
 
+def stretch_all_frames_left(starting_pixel, stretch_intensity=13):
+    index_list = create_index_list(stretch_intensity)
+    directory = Path('video-frames').iterdir()
+    number_of_frames = len(list(directory))
+    current_frame_number = 0
 
+    for frame in Path('video-frames').iterdir():
+        current_frame_number += 1
+        with Image.open(frame) as _frame:
+            _frame = _frame.rotate(90, expand=True)
+            IMG_ARRAY = create_np_array(_frame)
+            NEW_IMG = build_new_image(index_list, IMG_ARRAY, starting_pixel)
+            NEW_IMG = NEW_IMG.rotate(-90, expand=True)
+            save_file(NEW_IMG, frame)
+            print(f'{current_frame_number}/{number_of_frames}', frame, 'stretched')
+    
 if __name__ == "__main__":
     stretch_all_frames()
