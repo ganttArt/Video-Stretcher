@@ -17,6 +17,6 @@ To run: python3 main.py
 <br/>
 <br/>
 
-## Effect
+## Stretching Effect
 ![](/Assets/Waterfall_Stretch.jpg)<br/>
 See also: [Image Stretcher on GitHub](https://github.com/ganttArt/image_stretcher)
