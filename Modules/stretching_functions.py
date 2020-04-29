@@ -1,7 +1,8 @@
 '''Stretching functions for image stretcher, accessed through main.py'''
-
+from pathlib import Path
 from PIL import Image
 import numpy as np
+
 
 def create_np_array(pil_image):
     '''converts a jpg to a numpy array'''
@@ -90,9 +91,19 @@ def build_new_image(index_list, source_image, starting_pixel):
 def save_file(pil_image, filename):
     pil_image.save(f'{filename}')
 
-if __name__ == "__main__":
-    
-    index_list = create_index_list()
-    IMG_ARRAY = create_np_array(_frame)
-    NEW_IMG = build_new_image(index_list, IMG_ARRAY, 500)
-    save_file(NEW_IMG, frame)
+
+def stretch_all_frames(starting_pixel=170, direction=0, stretch_intensity=13):
+    index_list = create_index_list(stretch_intensity)
+    directory = Path('video-frames').iterdir()
+    number_of_frames = len(list(directory))
+    current_frame_number = 0
+
+    for frame in Path('video-frames').iterdir():
+        current_frame_number += 1
+        with Image.open(frame) as _frame:
+            _frame = _frame.rotate(direction, expand=True)
+            img_array = create_np_array(_frame)
+            new_img = build_new_image(index_list, img_array, starting_pixel)
+            new_img = new_img.rotate(-direction, expand=True)
+            save_file(new_img, frame)
+            print(f'{current_frame_number}/{number_of_frames}', frame, 'stretched')

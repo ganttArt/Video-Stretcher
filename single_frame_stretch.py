@@ -1,14 +1,16 @@
 import cv2
 from PIL import Image
-from stretching_functions import create_np_array, create_index_list, create_gradient, build_new_image, save_file
+from Modules.stretching_functions import create_np_array, create_index_list, create_gradient, build_new_image, save_file
 
 DIRECTION_DICT = {'down': 0, 'up': 180, 'left': 90, 'right': 270}
 
 VIDEO_FILE = 'Waves_Short.mp4'
 STARTING_PIXEL = 170
 STRETCH_INTENSITY = 13   # 1 <= STRETCH_INTENSITY <= 13
-DIRECTION = DIRECTION_DICT['right']
+DIRECTION = DIRECTION_DICT['up'] # change direction here!
 
+# consider adding another function that would create a 3 second video
+# to preview the effect in motion
 
 def get_one_frame(filename):
     cap = cv2.VideoCapture(filename)
@@ -17,6 +19,7 @@ def get_one_frame(filename):
     cap.release()
     cv2.destroyAllWindows()
     print('Frame saved as unstretched.png')
+
 
 def stretch_image():
     index_list = create_index_list(STRETCH_INTENSITY)
@@ -28,6 +31,7 @@ def stretch_image():
         save_file(new_img, 'stretched.png')
         new_img.show()
     print('Image stretched and saved as stretched.png')
+
 
 if __name__ == "__main__":
     get_one_frame(VIDEO_FILE)
