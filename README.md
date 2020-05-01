@@ -15,7 +15,7 @@ To test the stretching effect with a short 3 second video, use short_video_stret
 ### Waves Down
 [https://youtu.be/xN9zTDmrAP0](https://youtu.be/xN9zTDmrAP0)
 <br/>
-[![](/Assets/WavesDown_Thumbnail.png)](https://youtu.be/xN9zTDmrAP0)
+[![](http://img.youtube.com/vi/xN9zTDmrAP0/0.jpg)](https://youtu.be/xN9zTDmrAP0)
 <br/>
 <br/>
 
