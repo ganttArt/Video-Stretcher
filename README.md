@@ -2,7 +2,8 @@
 To install dependencies: pip3 install -r requirements.txt
 <br/>
 To run: python3 main.py<br/>
-To test the stretching effect on a single frame of video use single_frame_stretch.py
+To test the stretching effect on a single frame of video, use single_frame_stretch.py<br/>
+To test the stretching effect with a short 3 second video, use short_video_stretch.py
 
 ## Video Examples:
 ### Waves Upward
