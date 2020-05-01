@@ -45,13 +45,12 @@ def split_video(filename):
         except cv2.error as exception:
             print(exception)
             print('Exception handled gracefully')
-            print('All images created')
             break
 
     # When everything done, release the capture
     cap.release()
     cv2.destroyAllWindows()
-
+    print('All images created')
     return frame_rate
 
 if __name__ == "__main__":

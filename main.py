@@ -19,13 +19,12 @@ from Modules.split_video_by_frame import split_video
 from Modules.stretching_functions import stretch_all_frames
 from Modules.frames_to_video import create_video
 from shutil import rmtree
-from time import sleep
 
 DIRECTION_DICT = {'down': 0, 'up': 180, 'left': 90, 'right': 270}
 
-VIDEO_FILE = 'Waves_Short.mp4'
-STARTING_PIXEL = 170
-STRETCH_INTENSITY = 13   # 1 <= STRETCH_INTENSITY <= 13
+VIDEO_FILE = 'Waves-JavierLemus-XL.mp4'
+STARTING_PIXEL = 478
+STRETCH_INTENSITY = 8   # 1 <= STRETCH_INTENSITY <= 13
 DIRECTION = DIRECTION_DICT['up'] # change direction here!
 
 if __name__ == "__main__":

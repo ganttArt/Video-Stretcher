@@ -4,13 +4,10 @@ from Modules.stretching_functions import create_np_array, create_index_list, cre
 
 DIRECTION_DICT = {'down': 0, 'up': 180, 'left': 90, 'right': 270}
 
-VIDEO_FILE = 'Waves_Short.mp4'
-STARTING_PIXEL = 170
-STRETCH_INTENSITY = 13   # 1 <= STRETCH_INTENSITY <= 13
+VIDEO_FILE = 'Waves-JavierLemus-XL.mp4'
+STARTING_PIXEL = 478
+STRETCH_INTENSITY = 6   # 1 <= STRETCH_INTENSITY <= 13
 DIRECTION = DIRECTION_DICT['up'] # change direction here!
-
-# consider adding another function that would create a 3 second video
-# to preview the effect in motion
 
 def get_one_frame(filename):
     cap = cv2.VideoCapture(filename)
@@ -29,7 +26,7 @@ def stretch_image():
         new_img = build_new_image(index_list, img_array, STARTING_PIXEL)
         new_img = new_img.rotate(-DIRECTION, expand=True)
         save_file(new_img, 'stretched.png')
-        new_img.show()
+        # new_img.show()
     print('Image stretched and saved as stretched.png')
 
 
