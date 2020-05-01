@@ -1,7 +1,8 @@
 # Video Stretcher
 To install dependencies: pip3 install -r requirements.txt
 <br/>
-To run: python3 main.py
+To run: python3 main.py<br/>
+To test the stretching effect on a single frame of video use single_frame_stretch.py
 
 ## Video Examples:
 ### Waves Upward
