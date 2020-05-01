@@ -9,7 +9,7 @@ To test the stretching effect with a short 3 second video, use short_video_stret
 ### Waves Upward
 [https://youtu.be/eSdZ-TckGkU](https://youtu.be/eSdZ-TckGkU)
 <br/>
-[![](/Assets/WavesUp_Thumbnail.png)](https://youtu.be/eSdZ-TckGkU)
+[![](http://img.youtube.com/vi/eSdZ-TckGkU/0.jpg)](https://youtu.be/eSdZ-TckGkU)
 <br/>
 <br/>
 ### Waves Down
